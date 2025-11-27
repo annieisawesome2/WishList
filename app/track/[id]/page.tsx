@@ -100,15 +100,14 @@ export default function TrackPage() {
           </div>
         </div>
 
-        <SortControls sortBy={sortBy} onSortChange={setSortBy} />
-
-        <div className="mb-6">
+        <div className="mb-6 mt-6 flex items-center justify-between gap-4 flex-wrap">
           <button
             onClick={() => setShowAddItem(!showAddItem)}
             className="px-6 py-3 bg-blue-200 hover:bg-blue-300 text-blue-800 rounded-lg font-medium transition-colors shadow-md"
           >
             {showAddItem ? '− Hide Add Item' : '+ Add Item'}
           </button>
+          <SortControls sortBy={sortBy} onSortChange={setSortBy} />
         </div>
 
         {showAddItem && (
