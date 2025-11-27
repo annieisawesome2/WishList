@@ -159,35 +159,18 @@ export default function Home() {
                     return (
                       <div
                         key={item.id}
-                        className="p-3 rounded-lg border-2 bg-white border-pink-200 dark:bg-gray-700 dark:border-gray-600"
+                        className="p-4 rounded-lg border-2 bg-white border-pink-200 dark:bg-gray-700 dark:border-gray-600 flex items-center justify-start gap-3 min-h-[80px]"
                       >
-                        <div className="flex items-start gap-3">
-                          {item.image && (
-                            <img
-                              src={item.image}
-                              alt={item.title || 'Item'}
-                              className="w-12 h-12 rounded-lg object-cover flex-shrink-0"
-                            />
-                          )}
-                          <div className="flex-1 min-w-0">
-                            <p className="text-sm font-medium text-gray-900 dark:text-gray-100">
-                              {item.goal}
-                            </p>
-                            <p className="text-xs text-gray-600 dark:text-gray-400 mt-1 truncate">
-                              {item.title || 'Bag'}
-                            </p>
-                            {track && (
-                              <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                                {track.name}
-                              </p>
-                            )}
-                            {item.manualPrice !== undefined || item.price !== undefined ? (
-                              <p className="text-xs font-semibold text-green-600 dark:text-green-400 mt-1">
-                                ${(item.manualPrice ?? item.price ?? 0).toFixed(2)}
-                              </p>
-                            ) : null}
-                          </div>
-                        </div>
+                        {item.image && (
+                          <img
+                            src={item.image}
+                            alt={item.goal || 'Goal'}
+                            className="w-16 h-16 rounded-lg object-cover flex-shrink-0"
+                          />
+                        )}
+                        <p className="text-xl font-medium text-pink-600 dark:text-pink-400 text-left flex-1" style={{ fontFamily: "'Fredoka One', cursive" }}>
+                          {item.goal}
+                        </p>
                       </div>
                     )
                   })}

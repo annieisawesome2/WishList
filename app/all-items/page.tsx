@@ -6,7 +6,6 @@ import { Track, WishlistItem, SortOption } from '@/types'
 import { storage } from '@/lib/storage'
 import { sortItems } from '@/lib/utils'
 import ItemRow from '@/components/ItemRow'
-import SortControls from '@/components/SortControls'
 
 export default function AllItemsPage() {
   const router = useRouter()
@@ -83,8 +82,21 @@ export default function AllItemsPage() {
           </p>
         </div>
 
-        <div className="mb-6 flex items-center gap-4 flex-wrap">
-          <SortControls sortBy={sortBy} onSortChange={setSortBy} />
+        <div className="mb-6 flex items-center gap-6 flex-wrap">
+          <div className="flex items-center gap-2">
+            <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              Sort by:
+            </label>
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortOption)}
+              className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+              <option value="completion">Completion Status</option>
+            </select>
+          </div>
           
           <div className="flex items-center gap-2">
             <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
