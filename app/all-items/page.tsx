@@ -66,7 +66,7 @@ export default function AllItemsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8 px-4">
+    <div className="min-h-screen py-8 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="mb-8">
           <button
@@ -115,7 +115,7 @@ export default function AllItemsPage() {
           <div className="space-y-3">
             {sortedItems.map((item) => (
               <div key={item.id} className="relative">
-                <div className="absolute top-2 left-2 z-10 px-2 py-1 bg-blue-500 text-white text-xs rounded">
+                <div className="absolute top-2 left-2 z-10 px-2 py-1 bg-blue-200 text-blue-800 text-xs rounded">
                   {getTrackName(item.trackId)}
                 </div>
                 <ItemRow

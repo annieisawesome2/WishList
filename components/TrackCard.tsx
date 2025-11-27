@@ -50,7 +50,7 @@ export default function TrackCard({ track, itemCount, onDelete }: TrackCardProps
               onDelete(track.id)
             }
           }}
-          className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity px-2 py-1 bg-red-500 hover:bg-red-600 text-white text-xs rounded"
+          className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity px-2 py-1 bg-pink-200 hover:bg-pink-300 text-pink-800 text-xs rounded"
         >
           ×
         </button>

@@ -20,9 +20,7 @@ export default function SortControls({ sortBy, onSortChange }: SortControlsProps
       >
         <option value="price-asc">Price (Low to High)</option>
         <option value="price-desc">Price (High to Low)</option>
-        <option value="alphabetical">Alphabetical</option>
         <option value="completion">Completion Status</option>
-        <option value="track">Track</option>
       </select>
     </div>
   )

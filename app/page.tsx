@@ -52,7 +52,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8 px-4">
+    <div className="min-h-screen py-8 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2">
@@ -66,7 +66,7 @@ export default function Home() {
         <div className="mb-6 flex items-center gap-4">
           <Link
             href="/all-items"
-            className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors"
+            className="px-6 py-3 bg-purple-200 hover:bg-purple-300 text-purple-800 rounded-lg font-medium transition-colors"
           >
             View All Items
           </Link>
@@ -76,7 +76,7 @@ export default function Home() {
           {!showNewTrackInput ? (
             <button
               onClick={() => setShowNewTrackInput(true)}
-              className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+              className="px-6 py-3 bg-green-200 hover:bg-green-300 text-green-800 rounded-lg font-medium transition-colors"
             >
               + Create New Track
             </button>
@@ -102,7 +102,7 @@ export default function Home() {
                   setShowNewTrackInput(false)
                   setNewTrackName('')
                 }}
-                className="px-6 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg font-medium transition-colors"
+                className="px-6 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg font-medium transition-colors"
               >
                 Cancel
               </button>
