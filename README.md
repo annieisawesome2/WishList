@@ -1,32 +1,3 @@
-# WishList - Goal & Dream Tracker
-
-A flexible wishlist and goal tracker application where users can create custom tracks (Fitness, Academics, Healthy Eating, Makeup, etc.) and track items with images, links, goals, and completion status.
-
-## Features
-
-### 🎯 Core Structure
-- **Unlimited Custom Tracks**: Create tracks like Fitness, Academics, Healthy Eating, Makeup, Clothes, Tech, Lifestyle, Travel, Gifts, etc.
-- Each track contains its own wishlist items
-
-### 📦 Item Row Layout
-Each item is displayed as a horizontal card with:
-- **Image Box** (left): Drag & drop or upload item images
-- **Link Field** (middle): Paste URLs - automatically fetches title, price, and thumbnail
-- **Goal Field** (optional): Text input or choose from preset goals based on track
-- **Complete Button** (right): Mark items as completed with confetti animation
-
-### 🧠 Ranking System
-- **Primary Sort**: Price (ascending/descending)
-- Additional sorting options:
-  - Alphabetical
-  - Completion status
-  - Track
-- **Global Sort**: "All Items" view shows everything ranked by price
-
-### 🔍 Viewing Modes
-1. **Track View**: Shows items within a specific track, sorted by price
-2. **All-Items View**: Combines all items across tracks with global price ranking
-
 ## Getting Started
 
 ### Prerequisites
