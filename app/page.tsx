@@ -171,6 +171,12 @@ export default function Home() {
                         <p className="text-xl font-medium text-pink-600 dark:text-pink-400 text-left flex-1" style={{ fontFamily: "'Fredoka One', cursive" }}>
                           {item.goal}
                         </p>
+                        <Link
+                          href={`/track/${item.trackId}`}
+                          className="px-3 py-2 bg-pink-200 hover:bg-pink-300 text-pink-800 rounded-lg font-medium transition-colors text-sm flex-shrink-0"
+                        >
+                          View →
+                        </Link>
                       </div>
                     )
                   })}
